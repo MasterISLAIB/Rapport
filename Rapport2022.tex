@@ -5,14 +5,23 @@
 \usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{graphicx}
+\usepackage{color}
+\usepackage{here}
 
 
-%\renewcommand{\contentsname}{Sommaire}
+\renewcommand{\contentsname}{Sommaire}
+
+%%%%%% This will be deleted at the end %%%%%%
+\NewDocumentCommand\needRef{}
+{%
+{\color{red}[Référence ici]}
+}
+%%%%%% This will be deleted at the end %%%%%%
 
 \begin{document}
 %\input{chaps/00-Coverpage}
 \frontmatter
-% \input{chaps/AvantPropos}
+\input{chaps/AvantPropos}
 
 % \input{chaps/DédicacesCK}
 
